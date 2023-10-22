@@ -100,9 +100,8 @@ nav {
         top: 30%;
         left: 40%;
 
-        li {
+        .li-nav {
             list-style: none;
-            font-size: 24px;
             color: #fff;
             line-height: 2.2;
             text-transform: uppercase;
@@ -111,6 +110,12 @@ nav {
             &:before {}
         }
     }
+}
+
+.li-nav {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 nav.show {
@@ -166,7 +171,6 @@ nav.show {
     text-align: center;
 
     h1 {
-        font-size: 70px;
         animation: shotup 600ms ease-in-out;
         animation-delay: 300ms;
     }
