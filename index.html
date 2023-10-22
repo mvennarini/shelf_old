@@ -29,16 +29,27 @@
         </div>
 
 
-        <div class="img-phone">
+        <div id="logo-nav" class="img-phone">
             <img src="./images/logo/orizontal-logo.png" alt="Shelf Logo" height="70" class="logo-hidden img-phone-prop">
         </div>
-        <div class="">
-            <a href="" class="padding-5 hidden-text">Home</a>
-            <a href="" class="padding-5 hidden-text">Catalogo</a>
-            <a href="" class="padding-5 hidden-text">Fornitori</a>
-            <a href="" class="padding-5 hidden-text">Contatti</a>
+        <div class="button-flex logo-hidden">
+            <!-- <a href="" class="padding-5 hidden-text">Home</a>
+            <a href="" class="padding-5 hidden-text">Come funziona</a>
+            <a href="" class="padding-5 hidden-text">Chi siamo</a>
+            <a href="" class="padding-5 hidden-text">Contatti</a> -->
+            <button id="home-button" class="btn-nav hidden-text">Home</button>
+            <button id="come-funziona-button" class="btn-nav hidden-text">Come funziona</button>
+            <button id="chi-siamo-button" class="btn-nav hidden-text" >Chi Siamo</button>
+            <button id="contatti-button" class="btn-nav hidden-text">Contatti</button>
         </div>
-
+        
+        
+            <div id="login-register-button-div">
+                <button id="login-register-button" class="btn-login"><img src="./images/icon/login.png" alt="login icon" height="30" id="login-icon"></button>
+            </div>
+        
+        
+        
 
 
     </section>
@@ -46,14 +57,20 @@
     <nav id="nav">
         <ul>
             <li class="mg-t-80 bottom-border"><img src="./images/logo/green-logo.png" alt="shelf logo" height="50px" class="logo"></li>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Help</li>
+            <li class="li-nav"><a href="">Home</a></li>
+            <li class="li-nav"><a href="">Come funziona</a></li>
+            <li class="li-nav"><a href="">Chi siamo</a></li>
+            <li class="li-nav"><a href="">Contatti</a></li>
         </ul>
 
     </nav>
-
+    
+    <div id="login-menu" >
+        <div id="Accedi-registrati" class="accedi-registrati">
+            <button id="Accedi" class="btn-nav">Accedi</button>
+            <button id="Registrati" class="btn-nav">Registrati</button>
+        </div>
+    </div>
 
     <!-- -------------------------------------------------------- -->
 
@@ -61,15 +78,19 @@
     <section id="hero">
         <div class="div-hero">
             <div>
+                <div class="container">
+                    <img src="./images/logo/orizontal-logo.png" alt="food image" height="100" width="200"
+                        class="hidden-pc hero-logo">
+                </div>
                 <h1 class="">
                     Un <span class="f-bold">mercato virtuale</span> <br>
                     per <span class="f-bold">Ristoratori</span> e <span class="f-bold">Fornitori</span>
                 </h1>
                 <h3 class="">
-                    Trova tutti i prodotti di cui hai bisogno
+                    Registrati gratuitamente e trova tutti i prodotti di cui hai bisogno
                 </h3>
 
-                <button class="btn zoom-in-out-box">Tutti i prodotti</button>
+                <button class="btn zoom-in-out-box">Registrati</button>
             </div>
             <div>
                 <img src="./images/food-on-table.jpg" alt="food image" height="400" width="400"
@@ -148,9 +169,13 @@
         <h3 class="">
             Effettua la registrazione come
         </h3>
-        <div class="text-center">
-            <button class="btn">Ristoratore</button>
-            <button class="btn">Fornitore</button>
+        <div class="register-div">
+            <div class="reg-div">
+                <button id="reg-rist" class="btn">Ristoratore</button>
+            </div>
+            <div class="reg-div">
+                <button id="reg-forn" class="btn">Fornitore</button>
+            </div>
         </div>
 
         <h3>
@@ -158,17 +183,17 @@
         </h3>
 
         <div id="newsletter" class="">
-            <input type="email" placeholder="Email">
-            <button class="btn">➤</button>
+                <input type="email" placeholder="Email">
+                <button id="send-email" class="btn">➤</button>                
         </div>
     </section>
 
     <hr id="hr-register">
 
-    <!-- DA SISTEMARE COL BACKEND? -->
+    <!-- DA SISTEMARE COL BACKEND?
     <section id="product" style="height: 200px;">
 
-    </section>
+    </section> -->
 
     <section id="footer">
         <div id="footer-div" class="grid">

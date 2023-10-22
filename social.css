@@ -18,8 +18,15 @@
     text-align: center;
     text-decoration: none;
     color: antiquewhite;
-    margin: 0 30px;
+    margin: 0 15px;
     transition: .5s;
+}
+
+@media (max-width: 339px) {
+
+    #UL #LI #A {
+        margin: 0px 5px;
+    }
 }
 
 #UL #LI #A #SPAN {
