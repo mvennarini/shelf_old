@@ -35,8 +35,15 @@ h2 {
 button {
     font-family: 'Nunito', sans-serif;
     color: antiquewhite;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
+.btn:hover {
+    background-color: #58843d;
+    transform: scale(1.1);
+}
 hr {
     color: #c0c5bb;
     height: 20px;
@@ -53,6 +60,14 @@ input {
     outline: none;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------------------------------- */
 /* FONT_STYLE */
 
