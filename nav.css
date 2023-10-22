@@ -1,14 +1,3 @@
-body {
-    font-family: 'montserrat', roboto;
-}
-
-header {
-    width: 100%;
-    height: 100%;
-    background: #e74c3c;
-    position: absolute;
-    overflow: auto;
-}
 
 .icon-1,
 .icon-2,
@@ -95,7 +84,7 @@ header {
 nav {
     background: #63853f;
     box-shadow: #63853f 200px 0px 200px;
-    position: absolute;
+    position: fixed;
     top: 70px;
     left: 0;
     height: 100%;
@@ -181,4 +170,14 @@ nav.show {
         animation: shotup 600ms ease-in-out;
         animation-delay: 300ms;
     }
+}
+
+
+.logo {
+    border-radius: 20px;
+}
+
+.bottom-border {
+    border-bottom: antiquewhite solid 2px ;
+    width: fit-content;
 }
