@@ -1,0 +1,141 @@
+#UL {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#UL #LI {
+    list-style: none;
+}
+
+#UL #LI #A {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: antiquewhite;
+    margin: 0 30px;
+    transition: .5s;
+}
+
+#UL #LI #A #SPAN {
+    position: absolute;
+    transition: transform .5s;
+}
+
+#UL #LI #A #SPAN:nth-child(1),
+#UL #LI #A #SPAN:nth-child(3) {
+    width: 100%;
+    height: 3px;
+    background: antiquewhite;
+}
+
+#UL #LI #A #SPAN:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+#UL #LI #A:hover #SPAN:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+#UL #LI #A #SPAN:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+#UL #LI #A:hover #SPAN:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+#UL #LI #A #SPAN:nth-child(2),
+#UL #LI #A #SPAN:nth-child(4) {
+    width: 3px;
+    height: 100%;
+    background: antiquewhite;
+}
+
+#UL #LI #A #SPAN:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+}
+
+#UL #LI #A:hover #SPAN:nth-child(2) {
+    transform: scale(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+
+#UL #LI #A #SPAN:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top;
+}
+
+#UL #LI #A:hover #SPAN:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
+
+.facebook:hover {
+    color: antiquewhite;
+}
+
+.facebook:hover #SPAN {
+    background: antiquewhite;
+}
+
+.twitter:hover {
+    color: antiquewhite;
+}
+
+.twitter:hover #SPAN {
+    background: antiquewhite;
+}
+
+.instagram:hover {
+    color: antiquewhite;
+}
+
+.instagram:hover #SPAN {
+    background: antiquewhite;
+}
+
+.google:hover {
+    color: antiquewhite;
+}
+
+.google:hover #SPAN {
+    background: antiquewhite;
+}
+
+#UL #LI #A .twitter {
+    color: antiquewhite;
+}
+
+#UL #LI #A:hover:nth-child(3) {
+    color: antiquewhite;
+}
+
+#UL #LI #A:hover:nth-child(4) {
+    color: antiquewhite;
+}
+
+#Instagram ,#Linkedin {
+    margin-top: 10px;
+    filter: invert(100%);
+}
