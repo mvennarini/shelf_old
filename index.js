@@ -66,7 +66,7 @@ function changeHero() {
 }
 
 function mercatoVirtuale() {
-    var h1 = $("<h1 id='text-animate'>Un <span class='f-bold'>mercato virtuale</span> <br> per <span class='f-bold'>Ristoratori</span> e <span class='f-bold'>Fornitori</span></h1>");
+    var h1 = $("<h1 id='text-animate' >Un <span class='f-bold'>mercato virtuale</span> <br> per <span class='f-bold'>Ristoratori</span> e <span class='f-bold'>Fornitori</span></h1>");
     $('#mercato-virtuale-div').prepend(h1);
     return h1;
 }
