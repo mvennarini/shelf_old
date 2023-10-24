@@ -145,6 +145,7 @@ input {
     border: none;
     font-weight: bold;
     height: 40px;
+    transition: transform 0.3s
 }
 
 .btn-nav {
@@ -155,18 +156,28 @@ input {
     font-weight: bold;
     height: 40px;
     margin: 0px 5px;
+    transition: transform 0.3s
+}
+
+.btn-hero {
+    border-radius: 15px;
+    background-color: #4f77366f;
+    padding: 5px 20px 5px 20px;
+    border: none;
+    font-weight: bold;
+    height: 40px;
+    transition: transform 0.3s
 }
 
 
-.btn:hover {
+.btn:hover, .btn-nav:hover, .btn-hero:hover {
     background-color: #58843d;
     transform: scale(1.1);
 }
 
-.btn-nav:hover {
-    background-color: #58843d;
-    transform: scale(1.1);
-}
+
+
+
 
 #login-register-button {
     width: fit-content;
@@ -178,6 +189,24 @@ input {
 }
 
 
+@media (max-width:600px) {
+    .btn {
+        transition: transform 0.3s ease-in-out; /* Transizione con ritardo e durata */
+        transform-origin: center center; /* Imposta il punto di trasformazione al centro */
+    }
+    
+    .btn:active {
+        background-color: #58843d;
+        transform: scale(1.1);
+        transition-delay: 0.2s; /* Ritardo prima che inizi la trasformazione */
+    }
+    
+    .btn {
+        transition-delay: 0.2s; /* Ritardo prima di tornare alla dimensione originale */
+    }
+}
+
+
 /* ------------------------------------------------------------------------------- */
 /* NAVBAR SECTION */
 
@@ -185,18 +214,6 @@ input {
     /* background-color: #7dbd54; */
     background-color: #7dbd54;
 }
-
-/* #navbar {
-    height: 150px;
-    margin-top: 0;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 1;
-} */
 
 #navbar {
     height: 150px;
@@ -237,6 +254,7 @@ input {
     grid-template-columns: 10% 1fr 5% 5% 5%;
     grid-template-rows: 160px 150px 50px;
     position: fixed;
+    
 }
 
 
@@ -274,7 +292,7 @@ input {
 }
 
 .animate-out {
-    animation: fadeOut 500ms ease-in backwards;
+    animation: fadeOut 400ms ease-in backwards;
 }
 
 @keyframes fadeOut {
@@ -408,6 +426,10 @@ input {
 /* ------------------------------------------------------------------------------- */
 /* HERO SECTION */
 
+.hidden-div {
+    display: none;
+}
+
 #hero {
     background: linear-gradient(300deg, #f2edde, #f2f2f2, #f2edde);
     background-size: 100% 100%;
@@ -462,15 +484,33 @@ input {
 @media (max-width: 600px) {
 
     #hero {
-        height: 470px;
+        height: 400px;
     }
 
     .div-hero {
-        height: 400px;
+        height: 300px;
     }
 
     .div-hero>div>h1 {
         font-size: 2rem;
+        text-align: center;
+    }
+
+    .div-hero>div>h3 {
+        text-align: center;
+    }
+
+    #hero>div>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #hero>div>div>button {
+        width: fit-content;
+        margin: auto;
+        margin-top: 10px;
     }
 
     .hero-logo {
@@ -563,13 +603,27 @@ input {
         width: 300px;
         font-size: small;
     }
+
+    .box {
+        width: 50%;
+    }
+
+    
+
+    
 }
 
-@media (max-width: 330px) {
+@media (max-width: 365px) {
     .text-box {
         width: 200px;
         font-size: small;
     }
+
+    .box {
+        width: 60%;
+    }
+    
+    
 }
 
 /* ------------------------------------------------------------------------------- */
