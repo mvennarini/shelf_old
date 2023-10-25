@@ -447,7 +447,7 @@ input {
 
     #login-menu {
         grid-template-columns: 10% 1fr 5% 10px ; 
-        grid-template-rows: 80px 150px 50px;
+        grid-template-rows: 80px ;
     }
     .accedi-registrati {
         justify-self: end;

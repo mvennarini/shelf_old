@@ -47,8 +47,13 @@ p {
 
 @media (max-width: 1024px) {
 
-    #storia-h3 {
+    #storia-h3, #titolo {
         text-align: left;
+    }
+
+    #hero-div {
+        width: 600px;
+        height: fit-content;
     }
 
 }
@@ -59,11 +64,16 @@ p {
 @media (max-width: 600px) {
 
     #hero {
-        height: 400px;
+        height: 500px;
     }
 
     #hero-div {
-        height: 300px;
+        height: fit-content;
+
+    }
+
+    #storia-h3, #titolo {
+        text-align: center;
     }
 
     
@@ -72,17 +82,30 @@ p {
 @media (max-width: 505px) {
 
     #hero {
-        height: 450px;
+        height: 550px;
     }
 
-    #hero-div {
-        height: 370px;
-    }
-
-    #storia {
-        width: 70%;
-    }
 }
+
+
+@media (max-width: 339px) {
+
+    #hero {
+        height: 600px;
+    }
+
+}
+
+
+@media (max-width: 306px) {
+
+    #hero {
+        height: 700px;
+    }
+
+}
+
+
 
 
 /* SHELF PER RISTORATORI E FORNITORI -----------------ERRORII NON FUNZIONA-------------------------------------------------------------*/
