@@ -14,7 +14,8 @@ h1 {
 }
 
 p {
-    font-family: 'Nunito', sans-serif
+    font-family: 'Nunito', sans-serif;
+    margin: 10px 20px 10px 0;
 }
 
 .f-bold {
@@ -44,6 +45,17 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width: 1024px) {
+
+    #storia-h3 {
+        text-align: left;
+    }
+
+}
+
+
+
+
 @media (max-width: 600px) {
 
     #hero {
@@ -60,11 +72,11 @@ p {
 @media (max-width: 505px) {
 
     #hero {
-        height: 500px;
+        height: 450px;
     }
 
     #hero-div {
-        height: 400px;
+        height: 370px;
     }
 
     #storia {
@@ -269,6 +281,15 @@ p {
         grid-area: 4 / 3;
     }
     
+
+}
+
+
+@media (max-width: 415px) {
+
+    #shelf-ristoratori, #shelf-fornitori {
+        width: 350px;
+    }
 
 }
 
