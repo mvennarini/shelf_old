@@ -146,7 +146,7 @@ input {
     border: none;
     font-weight: bold;
     height: 40px;
-    transition: transform 0.3s
+    transition: transform 0.3s;
 }
 
 .btn-nav {
@@ -157,7 +157,7 @@ input {
     font-weight: bold;
     height: 40px;
     margin: 0px 5px;
-    transition: transform 0.3s
+    transition: transform 0.3s;
 }
 
 .btn-hero {
@@ -167,7 +167,7 @@ input {
     border: none;
     font-weight: bold;
     height: 40px;
-    transition: transform 0.3s
+    transition: transform 0.3s;
 }
 
 
@@ -227,6 +227,10 @@ input {
     z-index: 1;
     justify-self: center;
     border-bottom: #273b2d solid 5px;
+}
+
+.mg-b-20 {
+    margin-bottom: 20px;
 }
 
 #logo-nav {
@@ -511,7 +515,41 @@ input {
     .hidden {
         display: none;
     }
+
+    #hero {
+        height: 550px;
+        justify-content: center;
+    }
+
+    .div-hero {
+        height: 350px;
+        width: 95%;
+    }
+
+    .div-hero>div>h1 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .div-hero>div>h3 {
+        text-align: center;
+    }
+
+    #hero>div>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #hero>div>div>button {
+        width: fit-content;
+        margin: auto;
+        margin-top: 10px;
+    }
 }
+
+
 
 @media (max-width: 600px) {
 
@@ -521,6 +559,7 @@ input {
 
     .div-hero {
         height: 300px;
+        width: 100%;
     }
 
     .div-hero>div>h1 {
