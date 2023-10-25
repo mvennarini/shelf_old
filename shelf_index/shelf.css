@@ -1,0 +1,300 @@
+
+
+#hr-register {
+    margin-top: 0;
+}
+
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+*/
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.f-bold {
+    font-weight: bold;
+}
+
+/* DIV DELLA STORIA ------------------------------------------------------------------------------------------------*/
+#storia {
+    width: 600px;
+    
+}
+
+#hero-div {
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+#storia-h3 {
+    color: #939790;
+}
+
+.div-hero {
+    gap: 100px;
+}
+
+#titolo {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 600px) {
+
+    #hero {
+        height: 400px;
+    }
+
+    #hero-div {
+        height: 300px;
+    }
+
+    
+}
+
+@media (max-width: 505px) {
+
+    #hero {
+        height: 500px;
+    }
+
+    #hero-div {
+        height: 400px;
+    }
+
+    #storia {
+        width: 70%;
+    }
+}
+
+
+/* SHELF PER RISTORATORI E FORNITORI -----------------ERRORII NON FUNZIONA-------------------------------------------------------------*/
+
+#spiegazione-shelf {
+    background: linear-gradient(300deg, #f2edde, #f2f2f2, #f2edde);
+    background-size: 100% 100%;
+    height: fit-content;
+    display: flex;
+    align-items: end;
+}
+
+#contenitore {
+    min-height: fit-content;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#shelf-ristoratori, #shelf-fornitori {
+    height: 100%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7dbd54;
+}
+
+#shelf-ristoratori-titolo, #shelf-fornitori-titolo {
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+}
+
+
+#shelf-ristoratori-contenuto, #shelf-fornitori-contenuto {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(101, 101, 249);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+} 
+
+@media (max-width: 610px) {
+
+    #shelf-ristoratori, #shelf-fornitori {
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+    #shelf-ristoratori, #shelf-fornitori {
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    #shelf-ristoratori, #shelf-fornitori {
+        width: 300px;
+    }
+
+}
+
+
+
+/* DIV OFFRIAMO ------------------------------------------------------------------------ */
+
+#offriamo {
+    width: 100%;
+    height: fit-content;
+}
+
+#offriamo-titolo {
+    height: fit-content;
+    
+}
+
+#offriamo-titolo > h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#offriamo-contenitore {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+#abbonamento-1 {
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    transition: transform 0.3s;
+    margin-bottom: 40px;
+}
+
+#abbonamento-1:hover {
+    transform: scale(1.1);
+}
+
+#abbonamento-1-titolo {
+    height: 20%;
+    background-color: #7dbd54;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#abbonamento-1-contenuto {
+    height: 80%;
+}
+
+#abbonamento-gratis {
+    font-size: xx-large;
+    font-weight: 600;
+    color: antiquewhite;
+    margin: 0;
+    
+}
+
+.list-none {
+    list-style: none;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1050px) {
+
+    #offriamo-contenitore {
+
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    #offriamo-titolo > h1 {
+        font-size: larger;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: black;
+        font-size: large;
+        margin-right: 30px;
+    }
+
+    #offriamo-contenitore {
+        height: fit-content;
+        gap: 0;
+    }
+    
+    #abbonamento-1 {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TEST---------------------------------------------------------------- */
+/* ANIMATION ------------------------------------- */
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.active.slideInRight {
+    animation: 1s ease-out 0s 1 slideInRight;
+}
+
+.active.slideInLeft {
+    animation: 1s ease-out 0s 1 slideInLeft;
+}

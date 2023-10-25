@@ -116,6 +116,11 @@ nav {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    z-index: 3000;
+}
+
+#nav{
+    z-index: 3000;
 }
 
 nav.show {
