@@ -421,9 +421,9 @@ p {
 
 .reveal {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(0);
     opacity: 0;
-    transition: 2s all ease;
+    transition: 1s all ease;
 }
 
 .reveal.active {
