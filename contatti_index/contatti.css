@@ -1,0 +1,367 @@
+
+/* SEZIONE BIGLIETTO DA VISITA ------------------------------------------------------- */
+#retro-nav {
+    height: 180px;
+    background: linear-gradient(300deg, #f2edde, #f2f2f2, #f2edde);
+}
+
+#hero {
+    height: 500px;
+}
+
+.div-hero {
+    width: 100%;
+    height: 100%;
+}
+
+#hero > div >div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+#front-logo-pc {
+    height: 200px;
+    width: 500px;
+}
+
+.logo-card-center {
+    justify-self: center;
+    align-self: center;
+    height: 200px;
+}
+
+.back {
+    display: grid;
+    grid-template-columns: 20px 40% 20% 10px 190px;
+    grid-template-rows: 80px 30px 30px 30px 30px 30px 30px 30px 30px;
+    color: antiquewhite;
+}
+
+p {
+    font-size: larger;
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.7px;
+}
+
+#back-logo {
+    grid-area: 1 / 5 / 10 / 5;
+    justify-self: center;
+}
+
+#linea-verde {
+    background-color: #7dbd54;
+    grid-area: 1 / 4 / 10 / 4;
+}
+
+#shelf {
+    font-weight: 600;
+    font-size: xx-large;
+    grid-area: 2 / 2;
+    justify-self: start;
+}
+
+#p1 {
+    grid-area: 4 / 2;
+    justify-self: start;
+    text-decoration: underline;
+}
+
+#p2 {
+    grid-area: 5 / 2;
+    justify-self: start;
+}
+
+#p3 {
+    grid-area: 6 / 2;
+    justify-self: start;
+    text-decoration: underline;
+}
+
+#p4 {
+    grid-area: 7 / 2;
+    justify-self: start;
+}
+
+
+
+/* SEZIONE IL TEAM ------------------------------------------------------------------------------------------------- */
+
+#il-team {
+    width: 100%;
+    height: fit-content;
+}
+
+#il-team-container {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.info-partner {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.foto-profilo {
+    border-radius: 50%;
+    border: #273b2d solid 3px;
+    grid-area: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.nome-foto {
+    width: 100%;
+    height: 30%;
+    background-color: #7dbd54;
+    border-radius: 20px 20px 0 0;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+}
+
+.nome {
+    grid-area: 1 / 1;
+    margin-left: 20px;
+}
+
+.ruolo {
+    font-size: medium;
+    font-weight: 600;
+}
+
+.chi-sono {
+    margin: 20px 15px;
+}
+
+@media (max-width:850px) {
+    #alessandro {
+            margin-bottom: 50px;
+    }
+}
+
+@media (max-width:450px) {
+
+    .info-partner {
+        width: 350px;
+        height: 450px;
+    }
+
+}
+
+
+
+
+
+/* ANIMAZIONE BIGLIETTO DA VISITA ----------------------------------------------------------- */
+
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000px;
+    margin: 0 auto;
+}
+
+.flip-container,
+.front,
+.back {
+    width: 549px ;
+    height: 321px;
+    border-radius: 10px;
+}
+
+.ruotaCard {
+    animation: 2s ease-out 0s 1 ruotaCard forwards;
+    animation-delay: 1s;
+}
+
+@keyframes ruotaCard {
+    0% {
+        -moz-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0%);
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        -moz-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+}
+
+.flip-container,
+.front,
+.back {
+    width: 549px ;
+    height: 321px;
+}
+
+/* impostare velocità di transizione */
+.flipper {
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* nasconde il retro durante lo swap */
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #273b2d;
+
+}
+
+.front {
+    z-index: 2;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+
+
+
+
+/* DISPOSITIVI MOBILI */
+
+
+@media (max-width: 600px) and (max-height: 900px ),
+        (min-width: 601px) and (max-height: 700px ) {
+
+            #retro-nav {
+                height: 100px;
+            }
+        
+            #hero {
+                height: 400px;
+            }
+
+}
+
+@media (min-width: 1200px) {
+
+    .hidden-pc {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #retro-nav {
+        height: 100px;
+    }
+
+    #hero {
+        height: 400px;
+    }
+
+    .hidden-cell {
+        display: none;
+    }
+
+    .flip-container,
+    .front,
+    .back {
+        width: 261px;
+        height: 369px;
+        border-radius: 10px;
+    }
+
+    #front-logo {
+        height: 300px;
+        width: 200px;
+    }
+
+    #back-logo {
+        height: 50px;
+    }
+
+
+    .back {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 10px 30px 30px 30px 30px 30px 30px 30px ;
+        color: antiquewhite;
+    }
+
+    p {
+        margin-left: 20px;
+    }
+    
+    
+    #back-logo {
+        grid-area: 1 / 1;
+        justify-self: center;
+    }
+    
+    #linea-verde {
+        background-color: #7dbd54;
+        grid-area: 2 / 1 ;
+    }
+    
+    #shelf {
+        font-weight: 600;
+        font-size: xx-large;
+        grid-area: 3 / 1;
+        justify-self: start;
+    }
+    
+    #p1 {
+        grid-area: 5 / 1;
+        justify-self: start;
+        text-decoration: underline;
+    }
+    
+    #p2 {
+        grid-area: 6 / 1;
+        justify-self: start;
+    }
+    
+    #p3 {
+        grid-area: 7 / 1;
+        justify-self: start;
+        text-decoration: underline;
+    }
+    
+    #p4 {
+        grid-area: 8 / 1 ;
+        justify-self: start;
+    }
+
+    /* Puoi aggiungere ulteriori regole CSS specifiche per tablet e cellulari qui */
+}
