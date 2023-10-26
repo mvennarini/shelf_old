@@ -195,7 +195,7 @@ p {
 
 .ruotaCard {
     animation: 2s ease-out 0s 1 ruotaCard forwards;
-    animation-delay: 1s;
+    animation-delay: 0.2s;
 }
 
 @keyframes ruotaCard {
